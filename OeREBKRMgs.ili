@@ -2,16 +2,18 @@ INTERLIS 2.3;
 
 /** Grundstruktur zur Verwendung innerhalb der zuständigen Stelle für die Geobasisdaten eines OeREBK-Themas.
  */
-MODEL OeREBKRM09gs (de)
-AT "mailto:ce@eisenhutinformatik.ch"
-VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
-  IMPORTS OeREBKRM09,MultilingualText09,OeREBKRM09vs;
+!!@ furtherInformation=http://www.cadastre.ch/oereb-public
+!!@ technicalContact=mailto:infovd@swisstopo.ch
+MODEL OeREBKRMgs_V1_1 (de)
+AT "http://models.geo.admin.ch/V_D/OeREB/"
+VERSION "2016-08-15"  =
+  IMPORTS OeREBKRMvs_V1_1,OeREBKRM_V1_1,LocalisationCH_V1;
 
   /** Um aus den Geodaten und den Rechtsvorschriften die konkreten öffentlichrechtlichen Eigentumsbeschränkungen zu bilden, werden Definitionen für die Zuordnung (OEREB-Definitionen) benötigt.
    */
   TOPIC Grundstruktur
-  EXTENDS OeREBKRM09vs.Vorschriften =
-    OID AS OeREBKRM09.OEREBOID;
+  EXTENDS OeREBKRMvs_V1_1.Vorschriften =
+    OID AS OeREBKRM_V1_1.OEREBOID;
 
     DOMAIN
 
@@ -25,13 +27,13 @@ VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
     CLASS OerebDefinition =
       /** Textliche Beschreibung der Beschränkung; z.B. "Wohnen W3"
        */
-      Aussage : MANDATORY MultilingualText09.MultilingualMText;
+      Aussage : MANDATORY LocalisationCH_V1.MultilingualMText;
       /** Definition des Raumbezugs in Prosa, z.B. "Im Abstand von 5m zum Strassenrand".
        */
-      UmschreibungRaumbezug : MultilingualText09.MultilingualMText;
+      UmschreibungRaumbezug : LocalisationCH_V1.MultilingualMText;
       /** Einordnung der Eigentumsbeschränkung in ein OEREB-Katasterthema
        */
-      OerebkThema : MANDATORY OeREBKRM09.Thema;
+      OerebkThema : MANDATORY OeREBKRM_V1_1.Thema;
     END OerebDefinition;
 
     /** Formale/maschinen-interpretierbare  Definition der Eigentumsbeschränkung (insbesondere des Raumbezugs)
@@ -85,10 +87,10 @@ VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
       Eigentumsbeschraenkung -- {0..*} OerebDefinition;
       /** Verweis auf die Rechtsvorschrift (oder das Gesetz/den Artikel für abstrakte Eigentumsbeschränkungen). Kann in einem anderen Behälter sein.
        */
-      Vorschrift (EXTERNAL) -- {1..*} OeREBKRM09vs.Vorschriften.DokumentElement;
+      Vorschrift (EXTERNAL) -- {1..*} OeREBKRMvs_V1_1.Vorschriften.DokumentBasis;
       /** Hinweis auf spezifische Artikel.
        */
-      ArtikelNr : BAG {0..*} OF OeREBKRM09.ArtikelNummer_;
+      ArtikelNr : BAG {0..*} OF OeREBKRM_V1_1.ArtikelNummer_;
     END HinweisVorschrift;
 
     ASSOCIATION TechOerebDefOerebDefinition =
@@ -118,21 +120,24 @@ VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
     CLASS Amt =
       /** Name des Amtes z.B. "Amt für Gemeinden und Raumordnung des Kantons Bern".
        */
-      Name : MANDATORY MultilingualText09.MultilingualText;
-      /** Verweis auf die Website des Amtes z.B. "http://www.jgk.be.ch/site/agr/".
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
+      /** Verweis auf die Website des Amtes z.B. "http://www.jgk.be.ch/jgk/de/index/direktion/organisation/agr.html".
        */
-      AmtImWeb : OeREBKRM09.WebReferenz;
+      AmtImWeb : OeREBKRM_V1_1.WebReferenz;
+      /** UID der organisatorischen Einheit
+       */
+      UID : OeREBKRM_V1_1.UID;
     END Amt;
 
     /** Angaben zum Darstellungsdienst.
      */
     CLASS Darstellungsdienst =
-      /** WMS GetMap-Request (für Maschine-Maschine-Kommunikation), z.B. "http://ecogis.admin.ch/de/wms?version=1.1.1&service=WMS&request=GetMap&LAYERS=invent_leit&srs=EPSG:21781&WIDTH=500&HEIGHT=500&bbox=500000,100000,700000,300000&FORMAT=image/png&TRANSPARENT=TRUE"
+      /** WMS GetMap-Request (für Maschine-Maschine-Kommunikation), z.B. "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&STYLES=default&SRS=EPSG:21781&BBOX=475000,60000,845000,310000&WIDTH=740&HEIGHT=500&FORMAT=image/png&LAYERS=ch.bazl.kataster-belasteter-standorte-zivilflugplaetze.oereb"
        */
       VerweisWMS : MANDATORY URI;
-      /** Verweis auf ein Dokument das die Karte beschreibt; z.B. "http://www.apps.be.ch/geoportal/output/gdp_adm_x3012app0081524772611.png"
+      /** Verweis auf ein Dokument das die Karte beschreibt; z.B. "https://wms.geo.admin.ch/?SERVICE=WMS&REQUEST=GetLegendGraphic&VERSION=1.1.1&FORMAT=image/png&LAYER=ch.bazl.kataster-belasteter-standorte-zivilflugplaetze.oereb"
        */
-      LegendeImWeb : MANDATORY OeREBKRM09.WebReferenz;
+      LegendeImWeb : MANDATORY OeREBKRM_V1_1.WebReferenz;
     END Darstellungsdienst;
 
     /** OEREB-Metadaten zu den Geodaten
@@ -162,4 +167,4 @@ VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
 
   END OerebMetadaten;
 
-END OeREBKRM09gs.
+END OeREBKRMgs_V1_1.

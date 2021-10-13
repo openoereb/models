@@ -2,10 +2,12 @@ INTERLIS 2.3;
 
 /** Zusatzstrukturen zur Verwendung innerhalb der Katasterorganisation des Kantons
  */
-MODEL OeREBKRM09ko (de)
-AT "mailto:ce@eisenhutinformatik.ch"
-VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
-  IMPORTS MultilingualText09,OeREBKRM09;
+!!@ furtherInformation=http://www.cadastre.ch/oereb-public
+!!@ technicalContact=mailto:infovd@swisstopo.ch
+MODEL OeREBKRMko_V1_1 (de)
+AT "http://models.geo.admin.ch/V_D/OeREB/"
+VERSION "2016-08-15"  =
+  IMPORTS OeREBKRM_V1_1,LocalisationCH_V1;
 
   /** Zum Zweck der Nachvollziehbarkeit müssen innerhalb der ÖREB-Katasterorganisation des Kantons Metadaten gem. diesem Teilmodell geführt werden.
    */
@@ -16,10 +18,13 @@ VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
     CLASS Amt =
       /** Name des Amtes z.B. "Amt für Gemeinden und Raumordnung des Kantons Bern".
        */
-      Name : MANDATORY MultilingualText09.MultilingualText;
+      Name : MANDATORY LocalisationCH_V1.MultilingualText;
       /** Verweis auf die Website des Amtes z.B. "http://www.jgk.be.ch/site/agr/".
        */
-      AmtImWeb : OeREBKRM09.WebReferenz;
+      AmtImWeb : OeREBKRM_V1_1.WebReferenz;
+      /** UID der organisatorischen Einheit
+       */
+      UID : OeREBKRM_V1_1.UID;
     END Amt;
 
     /** Angaben zur Datenlieferung an die Katasterorganisation des Kantons.
@@ -40,4 +45,4 @@ VERSION "2010-10-26"  // Entwurf nach der Anhörung // =
 
   END MetadatenKO;
 
-END OeREBKRM09ko.
+END OeREBKRMko_V1_1.

@@ -5,7 +5,7 @@ different versions. It contains the different branches:
 
 - [master](https://github.com/openoereb/models) => always the most recent
 - [0_9](https://github.com/openoereb/models/tree/0_9)
-- [1_0](https://github.com/openoereb/models/tree/1_0)
+- [1_1](https://github.com/openoereb/models/tree/1_1)
 - [2_0](https://github.com/openoereb/models/tree/2_0)
 
 To update, in the moment no automatic process is provided. Because the federal repo does
