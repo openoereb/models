@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3" 
+xmlns:ili2c="http://www.interlis.ch/ili2c" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.interlis.ch/INTERLIS2.3 oerebkrm09vs.xsd">
+  <HEADERSECTION SENDER="ceis" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="OeREBKRM09vs" VERSION="2010-10-26" URI="mailto:ce@eisenhutinformatik.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <OeREBKRM09vs.HinweiseGesetzlicheGrundlagen BID="b1">
+      <!-- gesetzliche Grundlagen gem. GeoIV Anh 1 http://www.admin.ch/ch/d/sr/510_620/app1.html -->
+      <!-- Nutzungsplanung (kantonal/kommunal) SR 700 Art. 14, 26 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.700">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c700.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Raumplanungsgesetz</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi sur l'aménagement du territoire</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge sulla pianificazione del territorio</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>rm</Language>
+                <Text>Lescha davart la planisaziun dal territori</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>RPG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>LAT</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>LPT</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>rm</Language>
+                <Text>LPT</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 700</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Projektierungszonen Nationalstrassen SR 725.11 Art. 14 -->
+      <!-- Baulinien Nationalstrassen SR 725.11 Art. 22 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.725.11">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c725_11.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Bundesgesetz über die Nationalstrassen</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi fédérale sur les routes nationales</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge federale sulle strade nazionali</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>NSG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>LRN</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>LSN</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 725.11</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Projektierungszonen Eisenbahnanlagen SR 742.101 Art. 18n -->
+      <!-- Baulinien Eisenbahnanlagen SR 742.101 Art. 18q -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.742.101">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c742_101.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Eisenbahngesetz</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi fédérale sur les chemins de fer</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge federale sulle ferrovie</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>EBG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>LCdF</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Lferr</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 742.101</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Projektierungszonen Flughafenanlagen SR 748 Art. 37n–p -->
+      <!-- Baulinien Flughafenanlagen SR 748 Art. 37q–s -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.748.0">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c748_0.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Luftfahrtgesetz</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi fédérale sur l'aviation</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge federale sulla navigazione aerea</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>LFG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>LA</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>LNA</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 748.0</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Sicherheitszonenplan bei Flughäfen SR 748.131.1 Art. 71–73 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.748.131.1">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c748_131_1.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Verordnung über die Infrastruktur der Luftfahrt</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Ordonnance sur l'infrastructure aéronautique</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Ordinanza sull'infrastruttura aeronautica</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>VIL</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>OSIA</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>OSIA</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 748.131.1</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Kataster der belasteten Standorte SR 814.01 Art. 32c SR 814.680 Art 5 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.814.01">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c814_01.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Umweltschutzgesetz</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi sur la protection de l'environnement</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge sulla protezione dell'ambiente</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Environmental Protection Act</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>USG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>LPE</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>LPAmb</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>EPA</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 814.01</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Kataster der belasteten Standorte im Bereich des Militärs SR 814.01 Art. 32c SR 814.680 Art. 5 -->
+      <!-- Kataster der belasteten Standorte im Bereich der zivilen Flugplätze SR 814.01 Art. 32c SR 814.680 Art. 5 -->
+      <!-- Kataster der belasteten Standorte im Bereich des öffentlichen Verkehrs SR 814.01 Art. 32c SR 814.680 Art. 5 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.814.680">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c814_680.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Altlasten-Verordnung</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Ordonnance sur les sites contaminés</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Ordinanza sui siti contaminati</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Contaminated Sites Ordinance</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>AltlV</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>OSites</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>OSiti</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>CSO</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 814.680</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Grundwasserschutzzonen SR 814.20 Art. 20 SR 814.201 Art. 29, 30 Anhang 4 -->
+      <!-- Grundwasserschutzareale SR 814.20 Art. 21 SR 814.201 Art. 29, 30 Anhang 4 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.814.20">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c814_20.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Gewässerschutzgesetz</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi fédérale sur la protection des eaux</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge federale sulla protezione delle acque</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Waters Protection Act</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>GSchG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Leaux</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>LPAc</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>WPA</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 814.20</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.814.201">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c814_201.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Gewässerschutzverordnung</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Ordonnance sur la protection des eaux</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Ordinanza sulla protezione delle acque</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Waters Protection Ordinance</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>GSchV</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>OEaux</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>OPAc</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>WPO</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 814.201</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Lärmempfindlichkeitsstufen (in Nutzungszonen) SR 814.41 Art. 43 -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.814.41">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c814_41.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Lärmschutz-Verordnung</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Ordonnance sur la protection contre le bruit</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Ordinanza contro l'inquinamento fonico</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Noise Abatement Ordinance</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>LSV</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>OPB</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>OIF</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>NAO</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 814.41</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+      <!-- Waldgrenzen (in Bauzonen) SR 921.0 Art. 13 -->
+      <!-- Waldabstandslinien SR 921.0 Art. 17  -->
+      <OeREBKRM09vs.Vorschriften.Dokument TID="ch.admin.bk.sr.921.0">
+        <TextImWeb>http://www.admin.ch/ch/d/sr/c921_0.html</TextImWeb>
+        <Rechtsstatus>inKraft</Rechtsstatus>
+        <publiziertAb>2010-09-20</publiziertAb>
+        <Titel>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Waldgesetz</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Loi sur les forêts</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Legge forestale</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Forest Act</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Titel>
+        <Abkuerzung>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>WaG</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>LFo</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>LFo</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>ForA</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Abkuerzung>
+        <OffizielleNr>SR 921.0</OffizielleNr>
+        <ZustaendigeStelle REF="ch.admin.bk"/>
+      </OeREBKRM09vs.Vorschriften.Dokument>
+
+      <OeREBKRM09vs.Vorschriften.Amt TID="ch.admin.bk">
+        <Name>
+          <MultilingualText09.MultilingualText>
+            <localizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>de</Language>
+                <Text>Bundeskanzlei</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>fr</Language>
+                <Text>Chancellerie fédérale</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>it</Language>
+                <Text>Cancelleria federale</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>rm</Language>
+                <Text>Chanzlia federala</Text>
+              </MultilingualText09.LocalizedText>
+              <MultilingualText09.LocalizedText>
+                <Language>en</Language>
+                <Text>Federal Chancellery</Text>
+              </MultilingualText09.LocalizedText>
+            </localizedText>
+          </MultilingualText09.MultilingualText>
+        </Name>
+        <AmtImWeb>http://www.bk.admin.ch</AmtImWeb>
+      </OeREBKRM09vs.Vorschriften.Amt>
+    </OeREBKRM09vs.HinweiseGesetzlicheGrundlagen>
+  </DATASECTION>
+</TRANSFER>
